@@ -7,8 +7,27 @@ __all__ = ["protobuf_to_dict", "TYPE_CALLABLE_MAP", "dict_to_protobuf", "REVERSE
 
 EXTENSION_CONTAINER = '___X'
 
-
-TYPE_CALLABLE_MAP = {
+if (sys.version_info > (3, 0)):
+    TYPE_CALLABLE_MAP = {
+        FieldDescriptor.TYPE_DOUBLE: float,
+        FieldDescriptor.TYPE_FLOAT: float,
+        FieldDescriptor.TYPE_INT32: int,
+        FieldDescriptor.TYPE_INT64: int,
+        FieldDescriptor.TYPE_UINT32: int,
+        FieldDescriptor.TYPE_UINT64: int,
+        FieldDescriptor.TYPE_SINT32: int,
+        FieldDescriptor.TYPE_SINT64: int,
+        FieldDescriptor.TYPE_FIXED32: int,
+        FieldDescriptor.TYPE_FIXED64: int,
+        FieldDescriptor.TYPE_SFIXED32: int,
+        FieldDescriptor.TYPE_SFIXED64: int,
+        FieldDescriptor.TYPE_BOOL: bool,
+        FieldDescriptor.TYPE_STRING: str,
+        FieldDescriptor.TYPE_BYTES: lambda b: b.encode("base64"),
+        FieldDescriptor.TYPE_ENUM: int,
+    }
+else:
+    TYPE_CALLABLE_MAP = {
     FieldDescriptor.TYPE_DOUBLE: float,
     FieldDescriptor.TYPE_FLOAT: float,
     FieldDescriptor.TYPE_INT32: int,
