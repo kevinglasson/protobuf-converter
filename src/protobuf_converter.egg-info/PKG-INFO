@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: protobuf-converter
+Version: 0.2.0
+Summary: A teeny Python library for creating Python dicts from protocol buffers and the reverse. Useful as an intermediate step before serialisation (e.g. to JSON). Forked from Ben Hodgson https://github.com/benhodgson
+Home-page: https://github.com/kevinglasson/protobuf-to-dict
+Author: Kevin Glasson
+Author-email: kevinglasson+protobuf@gmail.com
+License: Public Domain
+Description: UNKNOWN
+Keywords: protobuf,json,dict
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

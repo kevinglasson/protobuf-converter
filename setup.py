@@ -1,14 +1,15 @@
 from setuptools import setup
 
 setup(
-    name='protobuf-to-dict',
+    name='protobuf-converter',
     description='A teeny Python library for creating Python dicts from '
         'protocol buffers and the reverse. Useful as an intermediate step '
-        'before serialisation (e.g. to JSON).',
-    version='0.1.0',
-    author='Ben Hodgson',
-    author_email='ben@benhodgson.com',
-    url='https://github.com/benhodgson/protobuf-to-dict',
+        'before serialisation (e.g. to JSON). Forked from Ben Hodgson '
+        'https://github.com/benhodgson',
+    version='0.2.0',
+    author='Kevin Glasson',
+    author_email='kevinglasson+protobuf@gmail.com',
+    url='https://github.com/kevinglasson/protobuf-to-dict',
     license='Public Domain',
     keywords=['protobuf', 'json', 'dict'],
     install_requires=['protobuf>=2.3.0'],

@@ -1,3 +1,4 @@
+import sys
 from google.protobuf.message import Message
 from google.protobuf.descriptor import FieldDescriptor
 
