@@ -6,15 +6,15 @@ setup(
         'protocol buffers and the reverse. Useful as an intermediate step '
         'before serialisation (e.g. to JSON). Forked from Ben Hodgson '
         'https://github.com/benhodgson',
-    version='0.2.0',
+    version='0.2.2',
     author='Kevin Glasson',
     author_email='kevinglasson+protobuf@gmail.com',
     url='https://github.com/kevinglasson/protobuf-to-dict',
     license='Public Domain',
-    keywords=['protobuf', 'json', 'dict'],
+    keywords=['protobuf', 'json', 'dict', 'converter', 'decode'],
     install_requires=['protobuf>=2.3.0'],
     package_dir={'':'src'},
-    py_modules=['protobuf_to_dict'],
+    py_modules=['protobuf-converter'],
     setup_requires=['protobuf>=2.3.0', 'nose>=1.0', 'coverage', 'nosexcover'],
     test_suite = 'nose.collector',
     classifiers=[
