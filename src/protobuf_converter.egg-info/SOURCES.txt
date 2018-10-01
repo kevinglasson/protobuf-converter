@@ -1,8 +1,0 @@
-README.md
-setup.py
-src/protobuf_to_dict.py
-src/protobuf_converter.egg-info/PKG-INFO
-src/protobuf_converter.egg-info/SOURCES.txt
-src/protobuf_converter.egg-info/dependency_links.txt
-src/protobuf_converter.egg-info/requires.txt
-src/protobuf_converter.egg-info/top_level.txt
